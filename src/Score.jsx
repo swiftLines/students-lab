@@ -2,7 +2,7 @@ const Score = (props) => {
   return ( 
     <>
       <div>
-        {props.student.}
+        {props.score.date} - {props.score.score}
       </div>
     </>
    );

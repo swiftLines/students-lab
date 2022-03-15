@@ -1,15 +1,15 @@
-
+import Score from "./Score";
 
 const Student = (props) => {
   return ( 
     <>
-      <div>
+      <h3>
         {props.student.name}
-      </div>
-      <div>
+      </h3>
+      <p>
         {props.student.bio}
-      </div>
-      {props.student.scores.map(score => <Score name={props.student.name} />)}
+      </p>
+      {props.student.scores.map(score => <Score name={props.student.name}  score={score}/>)}
     </>
    );
 }
